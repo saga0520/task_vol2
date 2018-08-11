@@ -14,7 +14,7 @@ public class TimeDifference {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		ArrayList<String> ary = new ArrayList<>();
-		//表示する都市数の変数number_of_citesを用意
+		//出力表示する都市数の変数number_of_citesを用意
 		int number_of_cites = 0;
 		try {
 			number_of_cites = sc.nextInt();
