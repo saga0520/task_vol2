@@ -19,6 +19,7 @@ public class TimeDifference {
 		try {
 			number_of_cites = sc.nextInt();
 			for (int i = 0; i < number_of_cites + 1; i++) {
+				//入力する都市の数は100件以下とする
 				if (number_of_cites >= 1 && 100 >= number_of_cites) {
 					Scanner sr = new Scanner(System.in);
 					String line = sr.nextLine();
@@ -30,7 +31,7 @@ public class TimeDifference {
 				}
 			}
 		} catch (IndexOutOfBoundsException e) {
-			System.out.println("上限を超えています");
+			System.out.println("入力する都市の数が上限を超えています");
 		}
 		//各都市の時差を出力するメソッドを呼び出す
 		city(ary, number_of_cites);
