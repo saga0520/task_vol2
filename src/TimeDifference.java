@@ -11,6 +11,31 @@ import java.util.Scanner;
  * @version 1.0
  */
 public class TimeDifference {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		ArrayList<String> ary = new ArrayList<>();
+		//表示する都市数の変数number_of_citesを用意
+		int number_of_cites = 0;
+		try {
+			number_of_cites = sc.nextInt();
+			for (int i = 0; i < number_of_cites + 1; i++) {
+				if (number_of_cites >= 1 && 100 >= number_of_cites) {
+					Scanner sr = new Scanner(System.in);
+					String line = sr.nextLine();
+					//都市名と時差を半角スペースで区切って配列に分割する
+					String[] strs = line.split(" ");
+					for (String s : strs) {
+						ary.add(s);
+					}
+				}
+			}
+		} catch (IndexOutOfBoundsException e) {
+			System.out.println("上限を超えています");
+		}
+		//各都市の時差を出力するメソッドを呼び出す
+		city(ary, number_of_cites);
+	}
+
 	/**
 	 * 各都市の時差を出力するメソッド
 	 * @param aryCts 入力都市と時差
@@ -52,30 +77,5 @@ public class TimeDifference {
 		} catch (Exception e) {
 			System.out.println("\n" + "入力が不適切です");
 		}
-	}
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		ArrayList<String> ary = new ArrayList<>();
-		//表示する都市数の変数Nを用意
-		int N = 0;
-		try {
-			N = sc.nextInt();
-			for (int i = 0; i < N + 1; i++) {
-				if (N >= 1 && 100 >= N) {
-					Scanner sr = new Scanner(System.in);
-					String line = sr.nextLine();
-					//都市名と時差を半角スペースで区切って配列に分割する
-					String[] strs = line.split(" ");
-					for (String s : strs) {
-						ary.add(s);
-					}
-				}
-			}
-		} catch (IndexOutOfBoundsException e) {
-			System.out.println("上限を超えています");
-		}
-		//各都市の時差を出力するメソッドを呼び出す
-		city(ary, N);
 	}
 }
