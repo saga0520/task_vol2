@@ -38,8 +38,8 @@ public class TimeDifference {
 
 	/**
 	 * 各都市の時差を出力するメソッド
-	 * @param aryCts 入力都市と時差
-	 * @param cts 表示都市の数
+	 * @param aryCts 入力する都市と基準にする都市との時差
+	 * @param cts 出力表示する都市の数
 	 */
 	public static void city(ArrayList<String> aryCts, int cts) {
 		//表示時刻の形式をHH:mmとする

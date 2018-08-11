@@ -40,7 +40,7 @@ d_1d_2...d_N・期待する出力は N 行からなります。
 ・t は 24 時間制で実際に存在する時刻を表す
 
 ## Demo
-![blackjack](https://user-images.githubusercontent.com/25055251/36338630-04105af0-13f8-11e8-9021-85a0accc6049.gif)
+![time](https://raw.githubusercontent.com/wiki/saga0520/task_vol2/images/timedifference.gif)
 ## Javadoc
  https://saga0520.github.io/javadoc_vol2/
 ## Author
